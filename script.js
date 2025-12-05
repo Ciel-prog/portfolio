@@ -46,4 +46,15 @@ document.addEventListener('DOMContentLoaded', function() {
     profileImg.addEventListener('error', function() {
         this.src = 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80';
     });
+    
+    // Add GitHub link functionality
+    const githubLink = document.querySelector('a[aria-label="GitHub"]');
+    if (githubLink) {
+        githubLink.addEventListener('click', function(e) {
+            if (!this.getAttribute('href') || this.getAttribute('href') === '#') {
+                e.preventDefault();
+                window.open('https://github.com/Ciel-prog', '_blank');
+            }
+        });
+    }
 });
