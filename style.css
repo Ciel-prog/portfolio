@@ -523,10 +523,7 @@ footer {
     color: var(--dark-text-light);
 }
 
-.footer-links a:hover {
-    color: var(--primary);
-    transform: translateY(-3px);
-}
+
 
 .dark .footer-links a:hover {
     color: var(--dark-primary);
