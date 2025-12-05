@@ -1,44 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Shandy Navales | Student Portfolio</title>
-      <link rel="stylesheet" href="style.css">
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-   </head>
-   <body>
-      <header class="card">
-         <img src="Ciel-prog/portfolio/blob/main/pic1.jpg" alt="Profile Picture" id="profile-img">
-         <h1 id="name">Shandy Japheth C. Navales</h1>
-         <p id="course-year">IT103 - 2nd year</p>
-         <button id="theme-toggle">Switch Theme</button>
-      </header>
-      
-      <main>
-         <section id="achievements" class="card">
-            <h2>🏆 Achievements & Certifications</h2>
-            <ul>
-               <li>Introduction to Programming With C#</li>
-               <li>Certiport Information Technology Specialist</li>
-               <li>C++ Lab: Crafting Code in the Digital Age</li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shandy Navales | Student Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">SN</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-         </section>
-         
-         <section id="projects" class="card">
-            <h2>💻 Previous Projects</h2>
-            <ul>
-               <li>**MindfulMe** (A desktop based mental wellness tracker)</li>
-               <li>**NutriPro+** (A diet generator and macro tracker desktop application)</li>
-               <li>**Donation Center Sorting Management System**</li>
-            </ul>
-         </section>
-      </main>
-      
-      <footer>
-        <p>&copy; 2025 Shandy Navales. All rights reserved.</p>
-      </footer>
+            <div class="theme-control">
+                <button id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                    <span>Switch Theme</span>
+                </button>
+            </div>
+        </div>
+    </nav>
 
-      <script src="script.js"></script>
-   </body>
+    <main>
+        
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="profile-image-container">
+                        <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Profile Picture" id="profile-img">
+                        <div class="profile-badge">
+                            <span class="badge-text">IT Student</span>
+                        </div>
+                    </div>
+                    <div class="hero-text">
+                        <h5 class="subtitle">Welcome to my portfolio</h5>
+                        <h1 id="name">Shandy Japheth C. Navales</h1>
+                        <p class="tagline">Aspiring Developer & IT Specialist</p>
+                        <div class="course-year-container">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span id="course-year">IT103 - 2nd Year</span>
+                        </div>
+                        <p class="hero-description">Passionate about creating innovative solutions through code. Currently exploring the realms of software development and information technology.</p>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn primary-btn">View Projects</a>
+                            <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+     
+        <section id="achievements" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-trophy"></i> Achievements & Certifications</h2>
+                    <p class="section-subtitle">Recognition of skills and knowledge</p>
+                </div>
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Introduction to Programming With C#</h3>
+                        <p>Mastered fundamentals of C# programming including OOP concepts, data structures, and application development.</p>
+                        <div class="achievement-tags">
+                            <span class="tag">C#</span>
+                            <span class="tag">Programming</span>
+                        </div>
+                    </div>
+                    
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Certiport Information Technology Specialist</h3>
+                        <p>Earned certification validating foundational IT knowledge across key domains including infrastructure, software, and security.</p>
+                        <div class="achievement-tags">
+                            <span class="tag">Certification</span>
+                            <span class="tag">IT Fundamentals</span>
+                        </div>
+                    </div>
+                    
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>C++ Lab: Crafting Code in the Digital Age</h3>
+                        <p>Hands-on experience with C++ programming, focusing on memory management, algorithms, and software design principles.</p>
+                        <div class="achievement-tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">Lab</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+     
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-laptop-code"></i> Previous Projects</h2>
+                    <p class="section-subtitle">Practical applications of technical skills</p>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-image-placeholder" style="background-color: #6C63FF;">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>MindfulMe</h3>
+                            <p class="project-type">Desktop Application</p>
+                            <p>A mental wellness tracker that helps users monitor their emotional state, practice mindfulness, and develop healthy mental habits through guided exercises.</p>
+                            <div class="project-tech">
+                                <span>C#</span>
+                                <span>.NET</span>
+                                <span>SQLite</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-image-placeholder" style="background-color: #4CAF50;">
+                                <i class="fas fa-apple-alt"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>NutriPro+</h3>
+                            <p class="project-type">Desktop Application</p>
+                            <p>A diet generator and macro tracker that creates personalized meal plans based on user goals, tracks nutritional intake, and provides dietary recommendations.</p>
+                            <div class="project-tech">
+                                <span>Java</span>
+                                <span>JavaFX</span>
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-image-placeholder" style="background-color: #FF6584;">
+                                <i class="fas fa-hands-helping"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Donation Center Sorting Management System</h3>
+                            <p class="project-type">Management System</p>
+                            <p>A system to efficiently manage, categorize, and track donations at charitable centers, optimizing distribution processes and inventory management.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Django</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2><i class="fas fa-envelope"></i> Get In Touch</h2>
+                    <p class="section-subtitle">Feel free to reach out for opportunities</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>navales.shandy@example.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Philippines</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-university"></i>
+                            <div>
+                                <h4>Education</h4>
+                                <p>2nd Year IT Student</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   
+    <script src="script.js"></script>
+</body>
 </html>
